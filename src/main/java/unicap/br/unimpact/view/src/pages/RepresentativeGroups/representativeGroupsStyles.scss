@@ -1,0 +1,18 @@
+.full-width-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: $box-border;
+    border-radius: 5px;
+
+    cursor: pointer;
+    
+    margin-bottom: 16px;
+    padding: 16px 24px;
+
+    > p:first-child{
+        margin: 0;
+    }
+}

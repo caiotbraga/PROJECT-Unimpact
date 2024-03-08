@@ -1,0 +1,44 @@
+version: "3.7"
+
+services:
+  unimpact_database:
+    image: postgres:9.6
+    container_name: "unimpact_postgres_database"
+    environment:
+      - POSTGRES_DB=unimpact
+      - POSTGRES_USER=unimpact
+      - POSTGRES_PASSWORD=unimpact
+      - TZ=UTC
+    volumes:
+      - "/var/lib/postgresql/data"
+    ports:
+      - 5438:5432
+
+  unimpact_api:
+    container_name: "unimpact_api"
+    depends_on:
+      - unimpact_database
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://unimpact_postgres_database:5432/unimpact
+      - SPRING_DATASOURCE_USERNAME=unimpact
+      - SPRING_DATASOURCE_PASSWORD=unimpact
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    build:
+      dockerfile: Dockerfile
+      context: ../
+    ports:
+      - 9090:9090
+
+  unimpact_view:
+    stdin_open: true
+    container_name: "unimpact_view"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      dockerfile: Dockerfile
+      context: ../src/main/java/unicap/br/unimpact/view
+    volumes:
+      - /app/node_modules
+      - ../src/main/java/unicap/br/unimpact/view:/app
+    ports:
+      - 3000:3000

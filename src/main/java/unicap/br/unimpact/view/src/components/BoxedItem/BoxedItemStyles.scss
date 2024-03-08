@@ -1,0 +1,31 @@
+.full-width-box.boxed-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    
+    margin-bottom: 24px;
+    padding: 16px 24px;
+
+    text-decoration: none;
+
+    div.__left-floating-content {
+        line-height: 1rem;
+
+        span {
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+
+    div.__right-floating-content {
+        line-height: 1rem;
+        
+        span {
+            font-size: 14px;
+        }
+    }
+}

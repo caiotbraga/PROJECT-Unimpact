@@ -1,0 +1,25 @@
+#proposal-details {
+    div.proposal-metadata {
+        display: flex;
+        align-items: center;
+
+        margin-top: 8px;
+        
+        span {
+            color: $secondary-text;
+            line-height: 1;
+
+            &:not(:first-child) {
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+.__proposal_section {
+    input, textarea {
+        &:read-only {
+            opacity: 1;
+        }
+    }
+}

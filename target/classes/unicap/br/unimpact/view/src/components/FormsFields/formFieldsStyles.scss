@@ -1,0 +1,51 @@
+.form-input-variant {
+    position: relative;
+
+    padding: 0 !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    height: 66px;
+
+    > label {
+        font-size: 1rem;
+        line-height: 1;
+
+        color: $normal-text-color;
+        font-weight: 500;
+    }
+
+    > input {
+        padding: 12px;
+
+        color: $normal-text-color;
+
+        &:focus {
+            outline: 0px !important;
+            -webkit-appearance: none;
+            box-shadow: none !important;
+            border-bottom: 2px solid $main-color;
+        }
+
+        &:disabled {
+            background: transparent;
+            opacity: 0.35;
+            ~ label {
+                opacity: 0.35;
+            }
+        }
+
+        &:read-only {
+            background: transparent;
+            opacity: 0.35;
+        }
+    }
+
+    input[type="date"] {
+        border: none;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+    }
+}

@@ -1,0 +1,67 @@
+form.user-register-form {
+    margin-top: 32px;
+  
+    #civilStateSelect {
+      color: $normal-text-color;
+  
+      &:focus {
+        border-color: $main-color;
+      }
+    }
+  }
+  
+  div.__form_row {
+    width: 100%;
+    display: flex;
+  
+    margin-bottom: 24px;
+  
+    *:not(:last-child) {
+      margin-right: 24px;
+    }
+    
+  }
+  
+  div.__form_container_half {
+    width: 100%;
+    display: flex;
+  }
+  
+  div.__form_container_quarter {
+    width: 100%;
+    display: flex;
+  }
+  
+  @media (max-width: 600px) {
+    div.__form_row {
+      display: flex;
+    }
+  
+    div.__form_container_half {
+      flex-direction: column;
+    }
+  
+    div.__form_container_quarter {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 1150px) {
+    div.__form_container_half {
+      flex-direction: column;
+    }
+  
+    div.__form_container_quarter {
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 1150px) {
+    div.__form_container_half {
+      flex-direction: row;
+    }
+    div.__form_container_quarter {
+      flex-direction: row;
+    }
+  }
+  

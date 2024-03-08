@@ -1,0 +1,43 @@
+.btn {
+    &.primary-button, &.secondary-button {
+        padding: 16px 42px;
+        line-height: 1;
+        text-transform: uppercase;
+        
+        &-small {
+            padding: 12px 32px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+    }
+    
+    &.primary-button, &.primary-button-small {
+        background-color: $light-blue;
+        border-color: $light-blue;
+        color: $light-text-color;
+    }
+    
+    &.secondary-button, &.secondary-button-small {
+        background-color: #FAFAFA;
+        border-color: #FAFAFA;
+    
+        color: $normal-text-color;
+
+        &:hover, &:focus{
+            background-color: #eeeeee;
+            border-color: #eeeeee;
+
+            color: $normal-text-color;
+
+            outline: 0px !important;
+            -webkit-appearance: none;
+            box-shadow: none !important;
+        }
+    }
+
+}
+
+.btn.danger-btn, .btn.danger-btn:hover, .btn.danger-btn:focus{
+    background-color: $text-danger;
+    border: $text-danger;
+}

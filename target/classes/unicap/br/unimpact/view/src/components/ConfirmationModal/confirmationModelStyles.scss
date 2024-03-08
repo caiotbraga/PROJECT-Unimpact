@@ -1,0 +1,25 @@
+#confirmation-modal {
+    .modal-content {
+        min-width: 600px;
+        
+        .modal-header {
+            padding-top: 32px;
+            padding-right: 32px;
+            padding-left: 32px;
+            h3 {
+                font-size: 24px;
+                margin: 0;
+
+                &.modal-title-warning {
+                    color: #a71616;
+                }
+            }
+        }
+
+        .modal-body{
+            padding-right: 32px;
+            padding-bottom: 32px;
+            padding-left: 32px;
+        }
+    }
+}

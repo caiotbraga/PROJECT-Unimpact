@@ -1,0 +1,115 @@
+div#navbar {
+    > div {
+        max-width: 1400px;
+
+        a#_logo {
+            padding: 0;
+            margin-right: 42px;
+        }
+
+        div#_paths {
+            > div {
+                text-decoration: none;
+                margin-right: 32px;
+
+                > a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        div#_nav_options {
+            padding: 0;
+
+            button.sign_method {
+                font-size: 14px;
+                line-height: 14px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 500;
+                padding: 8px 16px;
+
+                > svg {
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+
+            button.sign_method.btn-primary {
+                color: white;
+            }
+
+            button.sign_method.btn-ligth {
+                color: $main-color; 
+
+            button.sign_method.btn-light.shadow-box-element.rounded-element.pe-3.ps-3 {
+                color: $main-color; 
+            }
+        }
+    }
+}
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10%;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-right: 24px;
+        color: #333;
+
+        &:hover {
+            text-decoration: underline;
+            color: $main-color;
+        }
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+}
+
+.nav-options {
+    display: flex;
+    padding: 0;
+    margin-right: 4%;
+    
+    button.sign_method {
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        padding: 8px 16px;
+
+        > svg {
+            color: white;
+            font-size: 16px;
+        }
+    }
+
+    button.sign_method.btn-primary{
+        color: white;
+    }
+
+    button.sign_method.btn-ligth{
+        color: $main-color;
+    }
+
+    button.sign_method.btn-light.shadow-box-element.rounded-element.pe-3.ps-3{
+        color: $main-color;
+    }
+}

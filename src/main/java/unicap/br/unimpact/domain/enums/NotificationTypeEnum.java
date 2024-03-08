@@ -1,0 +1,13 @@
+package unicap.br.unimpact.domain.enums;
+
+public enum NotificationTypeEnum {
+
+    INVITE_REPRESENTATIVE,
+    INVITE_GROUP,
+    ACCEPT_INVITE_REPRESENTATIVE,
+    DECLINE_INVITE_REPRESENTATIVE,
+    ACCEPT_INVITE_GROUP,
+    DECLINE_INVITE_GROUP,
+    REMOVAL_NOTICE;
+
+}

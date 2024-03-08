@@ -1,0 +1,12 @@
+package unicap.br.unimpact.domain.enums;
+
+public enum FunctionEnum {
+    ROLE_ADMIN,
+    ROLE_REQUESTING_SIMPLE,
+    ROLE_REQUESTING_MANAGER,
+    ROLE_MIDDLE_MANAGER,
+    ROLE_REQUESTING_EMPLOYEE,
+    ROLE_MIDDLE_EMPLOYEE,
+    ROLE_EXECUTING_EMPLOYEE;
+
+}
