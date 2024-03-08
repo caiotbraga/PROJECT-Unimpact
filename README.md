@@ -1,7 +1,32 @@
-<h1 align="center">UNIMPACT</h1>
+<h1 align="center"> Extension Project Connection System - Catholic University of Pernambuco(UNIMPACT)</h1>
+
+# 
+
+## Project Description
+The project aims to create a system to facilitate the connection between individuals external to the Catholic University of Pernambuco (UNICAP) who wish to propose extension projects and the university. The system will be a platform where applicants can submit their proposals, which will be reviewed by UNICAP employees, called intermediaries. After the review, projects will be forwarded for execution, where an executor will make the final decision regarding the approval and implementation of the project.
+
+## Types of Users
+The system will have three types of users:
+
+### 1. Applicant
+- Individuals external to UNICAP who wish to propose extension projects.
+- Can submit their proposals through the platform.
+
+### 2. Intermediary
+- UNICAP employees responsible for reviewing the proposals submitted by the applicants.
+- Conduct the analysis of proposals and decide whether they should be forwarded for execution.
+
+### 3. Executor
+- Responsible for the final decision regarding the approval and implementation of projects.
+- Decide whether a project proposed by applicants will proceed.
+
+## Key Features
+- **Proposal Submission:** Applicants can submit their proposals for extension projects.
+- **Proposal Review:** Intermediaries review the submitted proposals and decide whether they should be forwarded for execution.
+- **Final Decision:** Executors have the final say on the approval and implementation of projects.
 
 
-<h2 align="center">💻Tecnologias Utilizadas </h2>
+<h2 align="center">💻Technologies Useds</h2>
 <p align="center">
 <a href="https://docs.spring.io/spring-boot/docs/2.5.3.RELEASE/reference/html/"><img alt="Spring Boot" src="https://img.shields.io/badge/Spring Boot-2.5.3-brightgreen.svg"/></a>
 <!-- <a href="https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MachineResearchGroup/SoftwareLab-API&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/cf253d76b9fa4d4887191a74c6bc30a9"/></a> -->
